@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula09</title>
+    <style>
+        body{
+            background-color: cadetblue;
+            color: aliceblue;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando DOM</h1>
+    <p>Lorem, ipsum dolor sit amet (<strong>DOM</strong>) consectetur adipisicing elit. Fugiat eaque excepturi tenetur provident perferendis, quaerat maiores voluptatibus laborum tempore, ut, libero sunt? Nulla perspiciatis veritatis aperiam, magni provident nobis accusamus!</p>
+    <div id ="msg">clique aqui</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.color = 'black'
+        var d = window.document.getElementById('msg')
+        d.style.background = 'black'
+        d.innerText = 'aguardando...'
+
+    </script>
+</body>
+</html>
