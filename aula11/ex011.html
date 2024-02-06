@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>De onde voce é ?</h1>
+    Voce mora em qual País: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="regiao()">
+    <div id="res">
+
+    </div>
+    <script>
+        function regiao(){
+            var pais = window.document.getElementById('txtpais')
+            var res = window.document.getElementById('res')
+            res.innerHTML = `Voce mora no ${pais}`
+        }
+           
+        
+    </script>
+
+    
+</body>
+</html>
